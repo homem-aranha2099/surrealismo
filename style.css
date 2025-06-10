@@ -1,0 +1,200 @@
+html {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d8d2ba;
+  font-size: 24px;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* HEADER */
+header {
+  background-size: cover;
+}
+
+/* FUNDO */
+.fundo {
+  width: 100%;
+  height: auto;
+}
+
+/* SEÇÕES COM IMAGEM E TEXTO (l1, l2, l4) */
+.l1, .l2, .l4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 7vh auto 0;
+  border-radius: 30px;
+  background: linear-gradient(to right, #a26257, #f9b25f, #fdd480);
+  padding: 20px;
+  gap: 20px;
+}
+
+.l1 img,
+.l2 img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  border: solid 10px #c28b4a;
+}
+
+/* PARÁGRAFOS */
+.l1 p,
+.l2 p {
+  background-color: #c28b4a;
+  border: solid 10px #c28b4a;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* SEÇÃO DE BLOCOS */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 7vh auto;
+  width: 90%;
+}
+
+.section .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+/* CAIXAS INDIVIDUAIS */
+.section .div1,
+.section .div2,
+.section .div3,
+.section .div4 {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #a26257, #f9b25f, #fdd480);
+  padding: 20px;
+}
+
+/* IMAGENS DENTRO DAS CAIXAS */
+.section .div1 img,
+.section .div2 img,
+.section .div3 img,
+.section .div4 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+  border: solid 10px #c28b4a;
+}
+
+/* TEXTOS DENTRO DAS CAIXAS */
+.section .div1 p,
+.section .div2 p,
+.section .div3 p,
+.section .div4 p {
+  background-color: #c28b4a;
+  border: solid 10px #c28b4a;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+}
+
+.principal {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+    transform: rotate(90deg);
+}
+
+/* Telas até 1024px */
+
+/* Telas até 768px */
+
+/* Telas bem pequenas (ex: celular em modo retrato) */
+@media (max-width: 480px) {
+  .principal {
+    max-width: 300px;
+  }
+}
+
+/* TEXTO EM DESTAQUE */
+span {
+  color: white;
+  font-size: 40px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+
+
+  .principal {
+    max-width: 500px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  .section .row {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .section .div1,
+  .section .div2,
+  .section .div3,
+  .section .div4 {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+    .principal {
+        max-width: 400px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .l1, .l2, .l4 {
+    flex-direction: column;
+  }
+
+  .l1 p,
+  .l2 p {
+    max-width: 100%;
+  }
+
+  .section .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section .div1,
+  .section .div2,
+  .section .div3,
+  .section .div4 {
+    max-width: 100%;
+  }
+}
+
