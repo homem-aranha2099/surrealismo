@@ -1,0 +1,157 @@
+html {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d8d2ba;
+  font-size: 24px;
+  font-family: sans-serif;
+  color: white;
+}
+
+header {
+  background-size: cover;
+}
+
+.fundo {
+  width: 100vw;
+  height: auto;
+}
+
+.l1, .l2, .l4 {
+  display: flex;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 7vh;
+  border-radius: 30px;
+  background: linear-gradient(to right, #a26257, #f9b25f, #fdd480, #fdd480, #fdd480);
+}
+
+.l1 img,
+.l2 img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border: solid 10px #c28b4a;
+}
+
+p {
+  height: min-content;
+  margin: 20px;
+  padding: 10px;
+  background-color: #c28b4a;
+  border: solid 10px #c28b4a;
+}
+
+.l1 p {
+  max-width: 30%;
+}
+
+.l2 p {
+  max-width: 60%;
+}
+
+.l1 .p1 {
+  margin: 20px;
+}
+
+.l1 .p2 {
+  margin: 300px 20px 20px 20px;
+}
+
+span {
+  color: white;
+  font-size: 40px;
+}
+
+
+p {
+  height: min-content;
+  border: solid 10px #c28b4a;
+  background-color: #c28b4a;
+  margin: 20px 20px 20px 20px;
+}
+
+.l1 p {
+  max-width: 30%;
+  background-color: #c28b4a;
+}
+
+.l2 p {
+    max-width: 60%;
+    background-color: #c28b4a;
+    
+}
+
+.l1 .p1 {
+  margin: 20px;
+}
+
+.l1 .p2 {
+  margin: 300px 20px 20px 20px;
+}
+
+
+
+span {
+  color: white;
+  font-size: 40px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 7vh auto;
+  width: 90vw;
+}
+
+.section .row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section .div1,
+.section .div2,
+.section .div3,
+.section .div4 {
+  width: 40vw;
+  border-radius: 30px;
+  background: linear-gradient(to right, #a26257, #f9b25f, #fdd480);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section .div1 img,
+.section .div2 img,
+.section .div3 img,
+.section .div4 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+  border: solid 10px #c28b4a;
+}
+
+.section .div1 p,
+.section .div2 p,
+.section .div3 p,
+.section .div4 p {
+  background-color: #c28b4a;
+  border: solid 10px #c28b4a;
+  padding: 10px;
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
